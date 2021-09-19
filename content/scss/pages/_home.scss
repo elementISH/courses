@@ -1,5 +1,6 @@
 @import '../abstract/variables.scss';
 @import '../components/upcoming-courses-banner.scss';
+@import '../components/subscribe.scss';
 
 .validation-text{
         font-family: Inter !important;
@@ -21,12 +22,7 @@
     }
 
     .successful-students__header{
-            font-family: Georgia;
-            font-size: 48px;
-            font-weight: bold;
-            line-height: 1.25;
-            text-align: $start;
-            color: $blueColor;
+            @include generic__header;
         }
         .successful-students__content{
                 font-family: Inter;
@@ -90,52 +86,6 @@
     margin-top: 180px;
     padding: 57px;
     background-color: #f0f4f9;
-}
-
-.subscribe{
-    padding: 80px;
-    .subscribe__content{
-    .subscribe-now {
-        font-family: Inter;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: $start;
-        line-height: 3.75;
-      }
-    .get-updates{
-            font-family: Georgia;
-            font-size: 48px;
-            font-weight: bold;
-            line-height: 1.25;
-            text-align: $start;
-            color: $blueColor;
-    }
-    .subscribe-form{
-            padding: 8px 12px;
-            border-radius: 4px;
-            border: solid 1px $greyColor;
-        .subscribe-input{
-            border: none;
-        }
-        .subscribe-input::placeholder{
-            font-family: Inter;
-            font-size: 16px;
-            line-height: 3.75;
-            color: $greyColor;
-        }
-        .subscribe-btn{
-            padding: 11px 26px;
-            border-radius: 4px;
-            background-color: $yellowColor;
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.31;
-            text-align: center;
-            color: $blueColor;
-        }
-    }
-    }
 }
 
 .swiper {
