@@ -1,6 +1,17 @@
 @import '../abstract/variables.scss';
+@mixin generic__header{
+    font-family: Georgia;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: $start;
+    color: $blueColor;
+}
 
-.home-page{
+
+        .page-container{
+            max-width: 1170px;
+        }
         .default-btn{
            box-shadow: none;
            transition: none;
@@ -39,7 +50,7 @@
               display: block;
               content: "";
               width: 100%;
-              padding-top: (1 / 1) * 100%;
+              padding-top: 100%;
             }
             > .image {
               position: absolute;
@@ -87,6 +98,10 @@
                 font-weight: 500;
                 line-height: 1.06;
                 color: #fff;
+                display: flex;
+                .footer__info-content__location{
+                    width: 600px;
+                }
         }
         .custom-brand-name{
             text-transform: uppercase;
@@ -115,5 +130,4 @@
             line-height: 1.63;
             text-align: center;
             color: $blueColor;
-    }
-}
+        }

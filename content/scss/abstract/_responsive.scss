@@ -1,11 +1,16 @@
 @media (max-width: 1024px) {
+    .dropdown-container__dropdown-wrapper{
+        flex-direction: column;
+    }
     .swiper{
         display: block;
         margin-top: 400px;
     }
+    .home-page{
     .feature-courses{
         display: none;
     }
+}
     .feature-courses__header{
         align-self: center;
     }
