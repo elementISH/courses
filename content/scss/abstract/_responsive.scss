@@ -30,7 +30,7 @@
     .successful-students{
         overflow-x: hidden;
         .student-info{
-            left: 8%;
+            left: 10%;
         }
     }
 }
@@ -45,6 +45,11 @@
             .banner__image-container{
                 margin-left: 40%;
             }
+        }
+    }
+    .successful-students{
+        .student-info{
+            left: 25%;
         }
     }
 }
@@ -251,6 +256,11 @@
         }
         .subscribe-img{
             padding-right: 150px;
+        }
+    }
+    .successful-students{
+        .student-info{
+            left: -20%;
         }
     }
 }
