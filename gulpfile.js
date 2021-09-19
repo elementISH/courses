@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+var gulp = require('gulp')
     concat = require('gulp-concat'),
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass')(require('sass')),
