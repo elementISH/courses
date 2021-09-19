@@ -1,7 +1,9 @@
 @import '../abstract/variables.scss';
 @import '../components/subscribe.scss';
+.listing-page{
 .feature-courses{
     margin-top: -255px;
+}
 }
 .listing-container{
     display: flex;
@@ -64,4 +66,3 @@
         }
     }
 }
-

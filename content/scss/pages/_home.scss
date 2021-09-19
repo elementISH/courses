@@ -1,7 +1,6 @@
 @import '../abstract/variables.scss';
 @import '../components/upcoming-courses-banner.scss';
 @import '../components/subscribe.scss';
-
 .validation-text{
         font-family: Inter !important;
         font-size: 20px;
@@ -14,7 +13,7 @@
     .student-info{
         min-width: 400px;
         position: absolute;
-        left: 15%;
+        left: 22.5%;
         margin-top: -2.5%;
         border-radius: 6px;
         box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 0.03);
