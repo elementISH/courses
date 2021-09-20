@@ -42,3 +42,26 @@ function validateEmail(email) {
     }
     return;
 }
+
+// search popup
+let searchInputContainer = document.getElementById('search__container');
+
+// get full document height
+
+var body = document.body,
+html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                   html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+function popupSearch() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    searchInputContainer.style.display = "block";
+    document.getElementsByTagName('body')[0].style.overflow = "hidden";
+    searchInputContainer.style.height = height + 'px'
+}
+function closePopup() {
+    searchInputContainer.style.display = "none";
+    document.getElementsByTagName('body')[0].style.overflow = "auto";
+}
