@@ -9,59 +9,75 @@
 </head>
 <body>
   <div class="home-page">
-    <header class="header">
-      <div class="header-top">
-      <div class="container page-container header__container">
-        <section class="header__content d-flex justify-content-between">
-          <section class="header__left-section">
-            <span class="icon-location header__location header__left-section-icon"></span><span class="location-content header__content">1600 Amphitheatre Parkway, CA 94043</span>
-            <span class="icon-email header__email header__left-section-icon"></span><span class="email-content header__content mx-1">vctung@outlook.com</span>
-          </section>
+     <!-- search input container -->
 
-          <section class="header__right-section">
-            <span class="icon-facebook header__facebook"></span>
-            <span class="icon-instagram header__instagram"></span><!--  duplicate instagram because pinterest is not working -->
-            <span class="icon-twitter header__twitter"></span>
-            <span class="icon-instagram header__instagram"></span>
-          </section>
+     <div class="search-input__container" id="search__container">
+      <button class="btn close-button icon-invalid default-btn" onclick="closePopup()"></button>
+      <form class="row align-items-center search-form" id="search">
+      <label for="search" class="search-label decorated-text">Search</label>
+        <div class="col">
+          <input class="form-control search-input default-input" placeholder="Enter a keyword to search">
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-warning search-btn">Search</button>
+        </div>
+      </form>
+  </div>
+
+  <!-- end search input container -->
+  <header class="header">
+    <div class="header-top">
+    <div class="container page-container header__container">
+      <section class="header__content d-flex justify-content-between">
+        <section class="header__left-section">
+          <span class="icon-location header__location header__left-section-icon"></span><span class="location-content header__content">1600 Amphitheatre Parkway, CA 94043</span>
+          <span class="icon-email header__email header__left-section-icon"></span><span class="email-content header__content mx-1">vctung@outlook.com</span>
         </section>
-      </div>
+
+        <section class="header__right-section">
+          <span class="icon-facebook header__facebook"></span>
+          <span class="icon-instagram header__instagram"></span><!--  duplicate instagram because pinterest is not working -->
+          <span class="icon-twitter header__twitter"></span>
+          <span class="icon-instagram header__instagram"></span>
+        </section>
+      </section>
     </div>
-    <div class="header-bottom">
-        <nav class="navbar navbar-expand-lg navbar-light bg-none container page-container">
-          <div class="d-flex flex-grow-1 navbar__logo">
-              <span class="w-100 d-lg-none d-block"></span>
-              <img src="content/images/logo-book.png" alt="logo">
-              <a class="navbar-brand d-none d-lg-inline-block navbar__logo-brand-name mt-2 ms-2 custom-brand-name" href="/">for education</a>
-              <div class="w-100 text-right">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-              </div>
-          </div>
-          <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-              <ul class="navbar-nav ms-auto flex-nowrap">
-                  <li class="nav-item me-5">
-                      <a class="nav-link custom-nav-link" href="/">Home</a>
-                  </li>
-                  <li class="nav-item me-5">
-                      <a class="nav-link custom-nav-link" href="/">About</a>
-                  </li>
-                  <li class="nav-item me-5">
-                      <a class="nav-link custom-nav-link" href="/">Courses</a>
-                  </li>
-                  <li class="nav-item me-5">
-                      <a class="nav-link custom-nav-link" href="/">Contact</a>
-                  </li>
-              </ul>
-              <div class="navbar__buttons ms-3">
-              <button class="btn btn-warning sign-up default-btn">Sign up</button>
-              <button class="btn btn-light search icon-search ms-3 default-btn"></button>
-              </div>
-          </div>
-      </nav>
-    </div>
-    </header>
+  </div>
+  <div class="header-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-none container page-container">
+        <div class="d-flex flex-grow-1 navbar__logo">
+            <span class="w-100 d-lg-none d-block"></span>
+            <img src="content/images/logo-book.png" alt="logo">
+            <a class="navbar-brand d-none d-lg-inline-block navbar__logo-brand-name mt-2 ms-2 custom-brand-name" href="/">for education</a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+                <li class="nav-item me-5">
+                    <a class="nav-link custom-nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link custom-nav-link" href="/">About</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link custom-nav-link" href="/">Courses</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link custom-nav-link" href="/">Contact</a>
+                </li>
+            </ul>
+            <div class="navbar__buttons ms-3">
+            <button class="btn btn-warning sign-up default-btn">Sign up</button>
+            <button class="btn btn-light search icon-search ms-3 default-btn" id="popupSearch" onclick="popupSearch()"></button>
+            </div>
+        </div>
+    </nav>
+  </div>
+  </header>
     <div class="master-skills">
     <div class="container page-container">
       <div class="row align-items-center master-skills">
