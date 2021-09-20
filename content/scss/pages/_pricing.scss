@@ -1,0 +1,127 @@
+@import '../abstract/variables.scss';
+@import '../components/subscribe.scss';
+.pricing-banner{
+    padding: 47px 0px 0px;
+    background-color: $backgroundColor;
+    .pricing-banner__label{
+        margin-bottom: -25px;
+        .our-plans__label{
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 3.75;
+            text-align: $start;
+        }
+    }
+    .pricing-banner__header{
+        .our-plans__header{
+        @include generic__header;
+        margin-bottom: 50px;
+        }
+    }
+    .toggler-btns{
+        margin-top: 25px;
+        padding: 4px;
+        border-radius: 6px;
+        background-color: #fff;
+        padding: 10px;
+        width: 280px;
+        height: 100%;
+        .btn-monthly{
+            padding: 10.3px 28.5px 12.7px;
+            border-radius: 4px;
+            background-color: $lightBlueColor;
+            font-family: Inter;
+            font-weight: 600;
+            line-height: 1.31;
+            text-align: center;
+            color: #fff;
+            margin-right: 10px;
+        }
+        .btn-yearly{
+                padding: 10.3px 36.5px 12.7px;
+                border-radius: 4px;
+                background-color: #fff;
+                font-family: Inter;
+                font-weight: 600;
+                line-height: 1.31;
+                text-align: center;
+                color: $blueColor;
+        }    
+    }
+}
+
+.pricing-cards{
+    background-color: $backgroundColor;
+    padding-bottom: 115px;
+    .pricing-card__container{
+        display: flex;
+        justify-content: space-between;
+        .pricing-card{
+            width: $card;
+            padding: 0 34.5px 48px 36px;
+            border-radius: 6px;
+            border: solid 1px $greyColor;
+            background-color: #fff;
+            .card-divider{
+                border: solid 1px $greyColor;
+            }
+                .pricing__header{
+                    @include pricing__header;
+                }
+                .pricing__header::before{
+                    content: "$";
+                    font-family: Georgia;
+                    font-size: 24px;
+                    font-weight: bold;
+                    line-height: 2.5;
+                    text-align: $start;
+                    color: $blueColor;
+                    padding-right: 10px;
+                }
+                .pricing__description{
+                    font-family: Inter;
+                    line-height: 3.75;
+                    text-align: $start;
+                    color: $greyColor;
+            }
+            .benefits-list{
+                .benefits-list__benefit{
+                    font-family: Inter;
+                    font-size: 16px;
+                    line-height: 3.75;
+                    text-align: $start;
+                    color: $blueColor;
+                }
+            }
+            .purchase-btn{
+                padding: 15px 94px 18px;
+                border-radius: 4px;
+                background-color: $blueColor;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.31;
+                text-align: center;
+                color: #f0f4f9;
+                margin-top: 30px;
+            }
+            .subscription-type{
+                width: 144px;
+                height: 36px;
+                padding: 7px 26px 8px;
+                background-color: $blueColor;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
