@@ -9,6 +9,22 @@
 </head>
 <body>
   <div class="pricing-page">
+    <!-- search input container -->
+
+    <div class="search-input__container" id="search__container">
+        <button class="btn close-button icon-invalid default-btn" onclick="closePopup()"></button>
+        <form class="row align-items-center search-form" id="search">
+        <label for="search" class="search-label decorated-text">Search</label>
+          <div class="col">
+            <input class="form-control search-input default-input" placeholder="Enter a keyword to search">
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-warning search-btn">Search</button>
+          </div>
+        </form>
+    </div>
+
+    <!-- end search input container -->
     <header class="header">
       <div class="header-top">
       <div class="container page-container header__container">
@@ -56,7 +72,7 @@
               </ul>
               <div class="navbar__buttons ms-3">
               <button class="btn btn-warning sign-up default-btn">Sign up</button>
-              <button class="btn btn-light search icon-search ms-3 default-btn"></button>
+              <button class="btn btn-light search icon-search ms-3 default-btn" id="popupSearch" onclick="popupSearch()"></button>
               </div>
           </div>
       </nav>
@@ -211,7 +227,6 @@
   </div>
 <script src="content/scripts/vendors/jquery.min.js"></script>
 <script src="content/scripts/vendors/bootstrap.min.js"></script>
-<script src="content/scripts/pages/pricing.js"></script>
 <script src="content/scripts/_generic.js"></script>
 </body>
 </html>
