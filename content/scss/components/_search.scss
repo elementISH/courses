@@ -3,7 +3,6 @@
 .search-input__container{
     display: none;
     width: 100%;
-    height: 1;
     overflow-x: hidden;
     position: absolute;
     z-index: 1;
@@ -24,6 +23,5 @@
     .close-button{
         float: $end;
         color: white;
-        position: sticky;
     }
 }
