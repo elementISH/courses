@@ -37,4 +37,3 @@ function changeToMonthly() {
 
 $(yearlyBtn).on('click', changeToYearly);
 $(monthlyBtn).on('click', changeToMonthly);
-
