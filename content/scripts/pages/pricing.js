@@ -31,6 +31,7 @@ function changeToMonthly() {
         $(".pricing__header").each(function(priceInList, price) {
         newPrice = +$(price).text() / 3;
         $(price).html(newPrice.toFixed(2))
+        })
     })
 }
 
