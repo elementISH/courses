@@ -1,7 +1,4 @@
 @media (max-width: 1024px) {
-    .dropdown-container__dropdown-wrapper{
-        flex-direction: column;
-    }
     .swiper{
         display: block;
         margin-top: 400px;
@@ -46,6 +43,17 @@
                 margin-left: 40%;
             }
         }
+    }
+    .footer{
+        .footer-container{
+            flex-direction: column;
+        }
+        .footer__main{
+            padding-left: 35%;
+            }
+            .community, .informations, .more{
+                padding-left: 40%;
+            }
     }
 }
 
@@ -251,17 +259,6 @@
         }
         .subscribe-img{
             padding-right: 150px;
-        }
-    }
-}
-
-@media (max-width: 567px){
-    .footer{
-        .footer__main{
-        padding-left: 20%;
-        }
-        .community, .informations, .more{
-            padding-left: 30%;
         }
     }
 }
