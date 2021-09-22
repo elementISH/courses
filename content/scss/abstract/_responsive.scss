@@ -47,6 +47,15 @@
             }
         }
     }
+    .pricing-cards{
+        .pricing-card__container{
+            flex-direction: column;
+            .pricing-card{
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 @media (max-width: 545px) {
