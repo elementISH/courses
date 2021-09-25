@@ -80,5 +80,5 @@ gulp.task('compressedRtl', function(){
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['content/scss/*/*.scss', 'content/scss/*.scss'], gulp.series(['SassCompileLtr', 'SassCompileRtl', 'vendorsCss', 'compressedLtr', 'compressedRtl']));
+    gulp.watch(['content/scss/*/*.scss', 'content/scss/*.scss'], gulp.series(['SassCompile', 'vendorsCss', 'compressedLtr', 'compressedRtl']));
 });
