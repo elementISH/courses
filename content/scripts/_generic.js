@@ -6,14 +6,12 @@ function validateEmail(email) {
   }
   
   function validate(mail) {
-    const XHTTP = new XMLHttpRequest();
     const EMAIL = $(mail);
     const LABEL = $('.validation-text');
     const FORM = $('.subscribe-form');
     const SUBSCRIBEBUTTON = $('.subscribe-btn');
     if (validateEmail(EMAIL.val())) {
         // valid
-        XHTTP.open("GET", "demo_get2.asp?fname=Henry&lname=Ford");
         LABEL.text("email is valid! ");
         LABEL.removeClass("icon-no-email");
         LABEL.removeClass("icon-invalid");

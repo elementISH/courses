@@ -55,12 +55,15 @@
 .icon-no-email::after {
   content: "\ea08";
   font-family: 'icomoon' !important;
+  padding-left: 10px;
 }
 .icon-invalid::after {
   content: "\ea0f";
   font-family: 'icomoon' !important;
+  padding-left: 10px;
 }
 .icon-valid::after {
   content: "\ea10";
   font-family: 'icomoon' !important;
+  padding-left: 10px;
 }

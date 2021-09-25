@@ -8,9 +8,9 @@ var gulp = require('gulp'),
     minify = require('gulp-minify'),
     replace = require('gulp-replace');
 
-gulp.task('SassCompileLtr', function () {
+gulp.task('SassCompile', function () {
 
-    return gulp.src(['content/scss/main-ltr.scss'])
+    return gulp.src(['content/scss/main-ltr.scss', 'content/scss/main-rtl.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', function (err) {
             console.log(`-----------------------------------------------------------------`);
@@ -31,38 +31,6 @@ gulp.task('SassCompileLtr', function () {
             );
             this.emit('end');
         }))
-        .pipe(concat("main-ltr.css"))
-        .pipe(sourcemaps.init())
-        .pipe(prefix('last 2 versions'))
-        .pipe(minify())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest("content/css"))
-});
-
-gulp.task('SassCompileRtl', function () {
-
-    return gulp.src(['content/scss/main-rtl.scss'])
-        .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', function (err) {
-            console.log(`-----------------------------------------------------------------`);
-            console.log(err.message);
-            console.log(`-----------------------------------------------------------------`);
-            notifier.notify(
-                {
-                    title: 'Sass Error Compiling',
-                    message: `Error in File : ${err.relativePath} \nError in Line : ${err.line} , Column : ${err.column} `,
-                    sound: false,
-                    wait: false,
-                    timeout: 1
-                },
-                function (err, response) {
-                    // Response is response from notification
-                }
-                
-            );
-            this.emit('end');
-        }))
-        .pipe(concat("main-rtl.css"))
         .pipe(sourcemaps.init())
         .pipe(prefix('last 2 versions'))
         .pipe(minify())

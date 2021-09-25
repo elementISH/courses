@@ -145,3 +145,22 @@
         .starter{
             background-color: $lightBlueColor !important;
         }
+        .error{
+            font-size: 20px;
+            font-family: Inter !important;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        .required{
+            color: #dba644;
+        }
+        .valid{
+            color: green;
+        }
+        .invalid{
+            color: red;
+        }
+        .normal{
+            color: $blueColor;
+        }
